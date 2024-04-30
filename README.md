@@ -1,6 +1,6 @@
 # Nerfies
 
-This is the repository that contains source code for the [Nerfies website](https://nerfies.github.io).
+This is the repository that contains source code for the [DA-RAW website](https://minsikjeon.github.io/DA-RAW/).
 
 If you find Nerfies useful for your work please cite:
 ```

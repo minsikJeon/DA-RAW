@@ -52,7 +52,7 @@
   </div>
   <div class="navbar-menu">
     <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
-      <a class="navbar-item" href="https://keunhong.com">
+      <a class="navbar-item" href="https://msjeon.me">
       <span class="icon">
           <i class="fas fa-home"></i>
       </span>
@@ -62,7 +62,7 @@
         <a class="navbar-link">
           More Research
         </a>
-        <div class="navbar-dropdown">
+        <!-- <div class="navbar-dropdown">
           <a class="navbar-item" href="https://hypernerf.github.io">
             HyperNeRF
           </a>
@@ -75,7 +75,7 @@
           <a class="navbar-item" href="https://photoshape.github.io">
             PhotoShape
           </a>
-        </div>
+        </div> -->
       </div>
     </div>
 
@@ -88,7 +88,7 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">Nerfies: Deformable Neural Radiance Fields</h1>
+          <h1 class="title is-2 publication-title">DA-RAW: Domain Adaptive Object Detection for Real-World Adverse Weather Conditions</h1>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
               <a href="https://msjeon.me">Minsik Jeon</a><sup>*</sup>,</span>
@@ -126,7 +126,7 @@
               </span>
               <!-- Explain Video Link. -->
               <span class="link-block">
-                <a href="https://www.youtube.com/watch?v=vsUSrFsbuu8"
+                <a href="https://www.youtube.com/watch?v=yUert9RGyMc"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fab fa-youtube"></i>
@@ -144,15 +144,6 @@
                   <span>Result Video</span>
                 </a>
               </span>
-              <!-- Dataset Link. -->
-              <span class="link-block">
-                <a href="https://github.com/google/nerfies/releases/tag/0.1"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="far fa-images"></i>
-                  </span>
-                  <span>Data</span>
-                  </a>
             </div>
 
           </div>
@@ -170,9 +161,7 @@
                 type="video/mp4">
       </video>
       <h2 class="subtitle has-text-centered">
-        <span class="dnerf">Nerfies</span> turns selfie videos from your phone into
-        free-viewpoint
-        portraits.
+        <span class="dnerf">DA-RAW</span> is a robust method for object detection in adverse weather conditions.
       </h2>
     </div>
   </div>
@@ -183,51 +172,21 @@
   <div class="hero-body">
     <div class="container">
       <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-steve">
-          <video poster="" id="steve" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/steve.mp4"
+        <div class="item item-bddrain">
+          <video poster="" id="bddrain" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/bdd_rain_result.mp4"
                     type="video/mp4">
           </video>
         </div>
-        <div class="item item-chair-tp">
-          <video poster="" id="chair-tp" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/chair-tp.mp4"
+        <div class="item item-taodacrain">
+          <video poster="" id="taodacrain" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/taodac_rain_result.mp4"
                     type="video/mp4">
           </video>
         </div>
-        <div class="item item-shiba">
-          <video poster="" id="shiba" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/shiba.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-fullbody">
-          <video poster="" id="fullbody" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/fullbody.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-blueshirt">
-          <video poster="" id="blueshirt" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/blueshirt.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-mask">
-          <video poster="" id="mask" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/mask.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-coffee">
-          <video poster="" id="coffee" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/coffee.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-toby">
-          <video poster="" id="toby" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/toby2.mp4"
+        <div class="item item-taodacsnow">
+          <video poster="" id="taodacsnow" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/taodac_snow_result.mp4"
                     type="video/mp4">
           </video>
         </div>
@@ -257,8 +216,8 @@
             a <strong>style gap</strong> and a <strong>weather gap</strong>. 
           </p>
           In this paper, we present an unsupervised domain adaptation framework for object detection 
-          that can more effectively adapt to <em>real-world environments with adverse weather conditions
-          by addressing these two gaps separately</em>.
+          that can more <strong>effectively adapt to real-world environments with adverse weather conditions
+          by addressing these two gaps separately</strong>.
           Our method resolves the style gap by concentrating on stylerelated information of high-level features using an attention
           module. Using self-supervised contrastive learning, our framework then reduces the weather gap and acquires instance
           features that are robust to weather corruption. Extensive
@@ -275,12 +234,15 @@
       <div class="column is-four-fifths">
         <h2 class="title is-3">Video</h2>
         <div class="publication-video">
-          <iframe src="https://www.youtube.com/embed/vsUSrFsbuu8?rel=0&amp;showinfo=0"
+          <iframe src="https://www.youtube.com/embed/yUert9RGyMc?rel=0&amp;showinfo=0"
                   frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
         </div>
       </div>
     </div>
     <!--/ Paper video. -->
+
+
+    
   </div>
 </section>
 
@@ -289,44 +251,51 @@
   <div class="container is-max-desktop">
 
     <!-- Animation. -->
-    <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-3">Animation</h2>
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Method</h2>
+        
+        <!-- Method Figure-->
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-full">
+            <img src="./static/images/method_fig.png"
+                 class="method-image"
+                 alt="Interpolate start reference image."/>
+          </div>
+        </div>
+        <!--/ Method Figure-->
 
         <!-- Interpolating. -->
-        <h3 class="title is-4">Interpolating states</h3>
         <div class="content has-text-justified">
           <p>
-            We can also animate the scene by interpolating the deformation latent codes of two input
-            frames. Use the slider here to linearly interpolate between the left frame and the right
-            frame.
+            We resolve the style and weather gaps separately to achieve optimal feature alignment. 
+            To bridge the style gap, our method aligns high-level style-related features using an attention module. 
+            Moreover, self-supervised contrastive learning is employed to resolve the weather gap.
           </p>
         </div>
-        <div class="columns is-vcentered interpolation-panel">
-          <div class="column is-3 has-text-centered">
-            <img src="./static/images/interpolate_start.jpg"
-                 class="interpolation-image"
-                 alt="Interpolate start reference image."/>
-            <p>Start Frame</p>
-          </div>
-          <div class="column interpolation-video-column">
-            <div id="interpolation-image-wrapper">
-              Loading...
-            </div>
-            <input class="slider is-fullwidth is-large is-info"
-                   id="interpolation-slider"
-                   step="1" min="0" max="100" value="0" type="range">
-          </div>
-          <div class="column is-3 has-text-centered">
-            <img src="./static/images/interpolate_end.jpg"
-                 class="interpolation-image"
-                 alt="Interpolation end reference image."/>
-            <p class="is-bold">End Frame</p>
-          </div>
-        </div>
+        
         <br/>
         <!--/ Interpolating. -->
 
+      </div>
+    </div>
+  </div>
+  
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+        <!-- Supplement video. -->
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-four-fifths">
+            <h2 class="title is-3">Result</h2>
+            <div class="publication-video">
+              <iframe src="https://www.youtube.com/embed/vsUSrFsbuu8?rel=0&amp;showinfo=0"
+                      frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+        <!--/ Supplement video. -->
       </div>
     </div>
   </div>

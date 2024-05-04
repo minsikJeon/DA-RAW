@@ -32,7 +32,7 @@
   <link rel="stylesheet"
         href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="./static/css/index.css">
-  <link rel="icon" href="./static/images/favicon.svg">
+  <link rel="icon" href="./static/images/favicon-16x16.png">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script defer src="./static/js/fontawesome.all.min.js"></script>
@@ -156,12 +156,20 @@
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <video id="teaser" autoplay muted loop playsinline height="100%">
-        <source src="./static/videos/teaser.mp4"
-                type="video/mp4">
-      </video>
+      <div class="publication-video">
+        <iframe src="https://www.youtube.com/embed/yUert9RGyMc?rel=0&amp;showinfo=0"
+                frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      </div>
+      <!-- <div class="concept has-text-centered">
+        <img src="./static/images/concept_fig.jpg"
+                  class="concept_fig"
+                  alt="Interpolate start reference image."
+                  width="70%"/>
+      </div> -->
       <h2 class="subtitle has-text-centered">
+        <br>
         <span class="dnerf">DA-RAW</span> is a robust method for object detection in adverse weather conditions.
+        <br>
       </h2>
     </div>
   </div>
@@ -172,21 +180,21 @@
   <div class="hero-body">
     <div class="container">
       <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-bddrain">
-          <video poster="" id="bddrain" autoplay controls muted loop playsinline height="100%">
+        <div class="item item-shiba has-text-centered">
+          <video poster="" id="shiba" autoplay controls muted loop playsinline width="90%">
             <source src="./static/videos/bdd_rain_result.mp4"
                     type="video/mp4">
           </video>
         </div>
-        <div class="item item-taodacrain">
-          <video poster="" id="taodacrain" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/taodac_rain_result.mp4"
+        <div class="item item-taodac_snow_result has-text-centered">
+          <video poster="" id="taodac_snow_result" autoplay controls muted loop playsinline width="90%">
+            <source src="./static/videos/taodac_snow_result.mp4"
                     type="video/mp4">
           </video>
         </div>
-        <div class="item item-taodacsnow">
-          <video poster="" id="taodacsnow" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/taodac_snow_result.mp4"
+        <div class="item item-taodac_rain_result has-text-centered">
+          <video poster="" id="taodac_rain_result" autoplay controls muted loop playsinline width="90%">
+            <source src="./static/videos/taodac_rain_result.mp4"
                     type="video/mp4">
           </video>
         </div>
@@ -230,7 +238,7 @@
     <!--/ Abstract. -->
 
     <!-- Paper video. -->
-    <div class="columns is-centered has-text-centered">
+    <!-- <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-3">Video</h2>
         <div class="publication-video">
@@ -238,7 +246,7 @@
                   frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
         </div>
       </div>
-    </div>
+    </div> -->
     <!--/ Paper video. -->
 
 
@@ -259,7 +267,7 @@
         <div class="columns is-centered has-text-centered">
           <div class="column is-full">
             <img src="./static/images/method_fig.png"
-                 class="method-image"
+                 class="method-image is-shadow"
                  alt="Interpolate start reference image."/>
           </div>
         </div>
@@ -268,19 +276,17 @@
         <!-- Interpolating. -->
         <div class="content has-text-justified">
           <p>
-            We resolve the style and weather gaps separately to achieve optimal feature alignment. 
+            ▲ We resolve the style and weather gaps separately to achieve optimal feature alignment. 
             To bridge the style gap, our method aligns high-level style-related features using an attention module. 
             Moreover, self-supervised contrastive learning is employed to resolve the weather gap.
           </p>
         </div>
-        
-        <br/>
+        <!-- <br/> -->
         <!--/ Interpolating. -->
 
       </div>
     </div>
   </div>
-  
 </section>
 
 <section class="section">
@@ -289,6 +295,38 @@
         <div class="columns is-centered has-text-centered">
           <div class="column is-four-fifths">
             <h2 class="title is-3">Result</h2>
+
+            <!-- Result Figure-->
+            <div class="columns is-centered has-text-centered">
+              <div class="column is-full">
+                <img src="./static/images/Result_fig.png"
+                    class="method-image is-shadow"
+                    alt="Interpolate start reference image."/>
+              </div>
+            </div>
+            <!--/ Result Figure-->
+            
+            <!-- Result Figure-->
+            <div class="columns is-centered has-text-centered">
+              <div class="column is-full">
+                <img src="./static/images/result_table.png"
+                    class="method-image"
+                    alt="Interpolate start reference image."/>
+              </div>
+            </div>
+            <!--/ Result Figure-->
+
+
+            <div class="content has-text-justified">
+              <p>
+                ▲ In both rainy and snowy conditions, our approach outperforms other methods when applied to real-world datasets. 
+                Existing UDA methods such as SADA and SWDA show a significant improvement in performance on synthetic datasets, 
+                but their performance on real-world datasets is only marginally improved or even decreases. This implies that existing methods
+                that globally align distributions are ineffective when adapting to real-world datasets with a large style gap and severe weather corruption.
+              </p>
+            </div>
+
+            <h2 class="title is-3">Additional Results</h2>
             <div class="publication-video">
               <iframe src="https://www.youtube.com/embed/vsUSrFsbuu8?rel=0&amp;showinfo=0"
                       frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
